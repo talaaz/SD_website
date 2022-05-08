@@ -10,8 +10,7 @@
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <div class="topnav" id="myTopnav">
       <a href="index.html">Home</a>
-      <a href="dd.html">Download Data</a>
-      <a href="stat.html">Data Stats</a>
+      <a href="basic_stats.html">Download Data</a>
       <a href="analysis.html">Data Analysis</a>
       <a href="notebook.html">Notebook</a>
     </div>
@@ -38,6 +37,55 @@
         document.myImage.src = community_list[selectedImage];
       }
     </script>
+<!--Basics section-->
+<section id="dd">
+  <div class="container">
+    <div class="row">
+      <h1>Data Stats</h1>
+      <div class="block"></div>
+      <h3>Basic statistics <br></h3>
+      <p>Now that you know how we processed the data, you are ready to navigate through the data of Motor Vehicle crashes.
+        This is best done by hovering over plots, and exploring the interactive visualisations.</p>
+
+      <h3>Understanding the data<br></h3>
+      <p>An thourough introduction to the data is used to get a better grasp on, what type of data is extracted and
+        whether or not the information can be used for further analysis and answering the questions described in the
+        <a href="index.html">Motivation</a>.
+      </p>
+      <br>
+      <p>Use the following plot to investigate how many accidents happen in New York city through the days of week
+        The plot is a histogram showing the days of the week on the x-axis corresponds to number of accidents on y-axis.
+      </p>
+      <div>
+        <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless"
+          src="https://plotly.com/~tato/106.embed" height="525" width="100%"></iframe>
+      </div>
+      <p>
+        Based on the histogram, we can see the largest number of accidents happen on Friday's.  
+        <br>
+        Now we want to investigate the timeslot where most accidents happen. The plot bellow will be showing the hours of day on the x-axis 
+        corresonds to number of accidents on y-axis. 
+      </p>
+      <div>
+        <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless"
+          src="https://plotly.com/~tato/108.embed" height="525" width="100%"></iframe>
+      </div>
+      <p>
+        So far we have learned that most of accidents happen on Fridays at 4PM which is the time where people get back home from work. In order to 
+        further understand the data we will explore the month where accidents happen most. 
+        <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless"
+        src="https://plotly.com/~tato/110.embed" height="525" width="100%"></iframe>
+        Based on the histogram above showing months on x-axis and accidents number on y-axis we can see that most accidents happen on January. 
+      </p>
+      <p>Finally, we want to learn about number of accidents by hour of week</p>
+      <div>
+        <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless"
+          src="https://plotly.com/~tato/112.embed" height="525" width="100%"></iframe>
+      </div>
+      <p>In order to understand where the accidents happen in New York city we plot a heatmap</p>
+      <iframe src="heatmap.html" height="525" width="100%" title="Iframe Example"></iframe>
+</section>
+
 
     <!-- analysis Section
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -45,5 +93,8 @@
       <div class="container">
         <div class="row">
           <h1>Data Analysis</h1>
-
+          <div class="block"></div>
+        </div>
+      </div>
+    </section>
 </html>
