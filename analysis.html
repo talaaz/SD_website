@@ -105,14 +105,24 @@
     <section id="analysis">
       <div class="container">
         <div class="row">
-          <h1>Predictions</h1>
+          <h1>Time Series Analysis</h1>
           <div class="block"></div>
-
+          <p>The analysis of number of crashes happening per day for a particular year helps us to identify 
+            the occurence of crashes & time factors like (day of week, hour ,season,etc) helps in analysing the
+             behaviour of crashes with respect to time. In this section, we tried to built a machine 
+            learning regression model for predicting the crashes occuring per day per hour for forecasting in the future also.</p>
           <div>
             <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless"
               src="https://plotly.com/~tato/189.embed" height="525" width="100%"></iframe>
           </div>
-
+          <p>Inorder to make prediction model more generic, data of weather features for the year 2018 has been incorporated
+             with the data to make it more generic with addition of weather features like -
+               ('Temperature', 'Precipitation', 'Snow','Snow Depth', 'Wind Speed', 'Wind Direction','Visibility','Cloud Cover'
+               , 'Relative Humidity')</p>
+          <div>
+            <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless"
+              src="https://plotly.com/~tato/211.embed" height="525" width="100%"></iframe>
+          </div>
         </div>
       </div>
     </section>
